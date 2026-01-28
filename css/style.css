@@ -1,0 +1,7 @@
+.bg-image {
+  background-image: url("../images/valentinebk.png");
+  background-size: cover; /* fills screen */
+  background-position: center; /* stays centered */
+  background-repeat: no-repeat;
+  min-height: 100vh;
+}
