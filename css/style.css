@@ -1,7 +1,30 @@
+/* Background image */
 .bg-image {
   background-image: url("../images/valentinebk.png");
-  background-size: cover; /* fills screen */
-  background-position: center; /* stays centered */
+  background-size: cover;
+  background-position: center;
   background-repeat: no-repeat;
   min-height: 100vh;
+}
+
+/* Overlay to improve text readability */
+.overlay {
+  background: rgba(0, 0, 0, 0.45); /* dark transparent layer */
+  min-height: 100vh;
+}
+
+/* Optional: better text spacing on mobile */
+@media (max-width: 768px) {
+  h1 {
+    font-size: 2.2rem;
+  }
+}
+
+#noBtn {
+  transition: all 0.25s ease;
+}
+
+.cute-image {
+  width: 310px;
+  height: 300px;
 }
