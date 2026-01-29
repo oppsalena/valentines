@@ -1,0 +1,124 @@
+body {
+  background-color: #ff8fa3; /* pink background */
+  min-height: 100vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  overflow-x: hidden;
+}
+
+.mail-wrapper {
+  position: relative;
+  width: 100%;
+  max-width: 900px;
+  height: 400px;
+}
+
+.mail {
+  position: absolute;
+  width: 60%;
+  max-width: 420px;
+}
+
+.mail-1 {
+  top: 0;
+  left: 0;
+  z-index: 1;
+}
+
+.mail-2 {
+  top: 80px;
+  left: 25%;
+  z-index: 2;
+}
+
+.mail-3 {
+  top: 160px;
+  left: 50%;
+  z-index: 1;
+}
+
+/* Mobile adjustments */
+@media (max-width: 768px) {
+  .mail-wrapper {
+    height: 300px;
+  }
+
+  .mail {
+    width: 70%;
+  }
+
+  .mail-2 {
+    left: 15%;
+  }
+
+  .mail-3 {
+    left: 30%;
+  }
+}
+
+@media (max-width: 480px) {
+  .mail-wrapper {
+    height: 260px;
+  }
+
+  .mail {
+    width: 85%;
+  }
+
+  .mail-1,
+  .mail-2,
+  .mail-3 {
+    left: 50%;
+    transform: translateX(-50%);
+  }
+
+  .mail-2 {
+    top: 70px;
+  }
+
+  .mail-3 {
+    top: 140px;
+  }
+}
+
+@keyframes mailShake {
+  0% {
+    transform: rotate(0deg);
+  }
+  2% {
+    transform: rotate(-2deg);
+  }
+  4% {
+    transform: rotate(2deg);
+  }
+  6% {
+    transform: rotate(-2deg);
+  }
+  8% {
+    transform: rotate(2deg);
+  }
+  10% {
+    transform: rotate(0deg);
+  }
+
+  /* stay still for the rest of the 15s */
+  100% {
+    transform: rotate(2deg) scale(1.01);
+  }
+}
+
+.mail-2 {
+  animation: mailShake 3s ease-in-out infinite;
+  transform-origin: center;
+}
+
+.clickable-mail {
+  cursor: pointer;
+}
+
+.mail-zoom {
+  transform: scale(3);
+  transition: transform 0.9s cubic-bezier(0.4, 0, 0.2, 1);
+  z-index: 999;
+}

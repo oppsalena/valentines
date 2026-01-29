@@ -1,0 +1,62 @@
+@font-face {
+  font-family: "Bubbly Font LoveSVG";
+  src: url("..//font/Bubbly Font LoveSVG.ttf") format("truetype");
+  font-weight: normal;
+  font-style: normal;
+}
+
+body {
+  font-family: bubbly font lovesvg;
+}
+
+/* Background image */
+.bg-image {
+  background-image: url("../images/valentinebk.png");
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  min-height: 100vh;
+}
+
+/* Overlay to improve text readability */
+.overlay {
+  background: rgba(0, 0, 0, 0.45); /* dark transparent layer */
+  min-height: 100vh;
+}
+
+/* Optional: better text spacing on mobile */
+@media (max-width: 768px) {
+  h1 {
+    font-size: 2.2rem;
+  }
+}
+
+#noButton {
+  transition: 0.5s;
+  border: 2px solid #ffffff;
+  box-shadow: 2px 2px 5px rgba(180, 180, 180, 0.3); /* Add a 2px horizontal, 2px vertical, 5px blur, and 0.3 opacity shadow */
+}
+
+#yesButton {
+  margin-right: 50px;
+  border: 2px solid #ffffff;
+  box-shadow: 2px 2px 5px rgba(0, 0, 0, 0.3);
+}
+
+.btn {
+  background-color: #80c3d8;
+  color: white;
+  padding: 15px 32px;
+  text-align: center;
+  display: inline-block;
+  font-size: 16px;
+  margin: 4px 2px;
+  cursor: pointer;
+  border: none;
+  border-radius: 12px;
+  transition: background-color 0.3s ease;
+}
+
+.btn:hover {
+  background-color: #ffb4bf;
+}
