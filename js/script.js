@@ -36,7 +36,7 @@ function nextPage() {
       <div>
         <h1 class="display-4">YAYYY 💖</h1>
         <p class="lead">I love you so much ❤️</p>
-        <img src="../images/jinji.png" alt="Jinji" class="img-fluid rounded" />
+        <img src="https://raw.githubusercontent.com/oppsalena/valentines/refs/heads/main/images/jinji.png" alt="jinji" class="img-fluid rounded" />
       </div>
     </div>
   `;
